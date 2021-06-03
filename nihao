@@ -1,0 +1,6 @@
+shadowsocks=174.139.126.153:60086, method=none, password=banana., ssr-protocol=auth_chain_a,ssr-protocol-param=def, obfs=plain,  tag=seal174.139.126.153p60086
+shadowsocks=185.168.20.119:40086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,ssr-protocol-param=def, obfs=plan,  tag=seal185.168.20.119p40086
+shadowsocks=101.32.46.127:50086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,ssr-protocol-param=def, obfs=plain,  tag=seal101.32.46.127p50086
+shadowsocks=174.139.126.153:40086, method=none, password=ken904, ssr-protocol=aes-256-cfb,ssr-protocol-param=def, obfs=plain,  tag=seal174.139.126.153p40086
+shadowsocks=98.126.213.30:40086, method=none, password=ken904, ssr-protocol=aes-256-cfb,ssr-protocol-param=def, obfs=plain,  tag=seal98.126.213.30p40086
+shadowsocks=98.126.213.30:60086, method=none, password=banana007, ssr-protocol=auth_chain_a,ssr-protocol-param=def, obfs=plain,  tag=seal98.126.213.30p60086
