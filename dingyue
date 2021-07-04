@@ -1,23 +1,23 @@
 
-http=a1.ap.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K一小白订阅
-http=a2.ap.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连2
-http=a3.ap.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连3
-http=a4.ap.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连4
-http=a5.ap.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连5
+http=a1.ap.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K一小白订阅
+http=a2.ap.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连2
+http=a3.ap.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连3
+http=a4.ap.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连4
+http=a5.ap.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K高速连5
 
-http=ap1-jp.er3.xyz:29985, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速日本
+http=ap1-jp.er3.xyz:29985, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速日本
 
-http=ap1-us.er3.xyz:29988, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速美国
+http=ap1-us.er3.xyz:29988, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速美国
 
-http=ap1-uk.er3.xyz:29987, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速英国
+http=ap1-uk.er3.xyz:29987, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速英国
 
-http=tx.wy.fastqvpn.com:29980, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速广东
+http=tx.wy.fastqvpn.com:29980, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速广东
 
-http=ap1-ge.er3.xyz:29984, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速德国
+http=ap1-ge.er3.xyz:29984, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速德国
 
-http=ap1-sg.er3.xyz:29986, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速新加坡
+http=ap1-sg.er3.xyz:29986, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=高速新加坡
 
-http=ap1-ca.er3.xyz:29983, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速加拿大
+http=ap1-ca.er3.xyz:29983, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速加拿大
 
-http=ap1-au.er3.xyz:29982, username=434002143729418240, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速澳大利亚
+http=ap1-au.er3.xyz:29982, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速澳大利亚
 
