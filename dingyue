@@ -1,4 +1,4 @@
-shadowsocks=8.210.179.54:11021, method=chacha20, password=wangruolin, fast-open=false, udp-relay=false, tag=微信公众号 柠檬玩机交流
+
 http=a1.ap.fastqvpn.com:29980, username=434002143729418240, password=b97db40d-b8dd-4134-bbd4-588fabfa5183, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K一小白订阅
 http=a2.ap.fastqvpn.com:29980, username=434002143729418240, password=b97db40d-b8dd-4134-bbd4-588fabfa5183, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K一键连2
 http=a3.ap.fastqvpn.com:29980, username=434002143729418240, password=b97db40d-b8dd-4134-bbd4-588fabfa5183, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=5K一键连3
