@@ -1,10 +1,10 @@
-shadowsocks=113.120.112.235:60089, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60089
-shadowsocks=101.32.46.127:50086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal101.32.46.127port50086
-shadowsocks=113.120.112.235:60088, method=none, password=banana007, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60088
-shadowsocks=113.120.112.235:40088, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port40088
-shadowsocks=39.88.73.164:24605, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal39.88.73.164port24605
 shadowsocks=113.120.112.235:64605, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port64605
-shadowsocks=174.139.137.34:44605, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal174.139.137.34port44605
-shadowsocks=113.120.112.235:60086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60086
+shadowsocks=113.120.112.235:40088, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port40088
+shadowsocks=113.120.112.235:60088, method=none, password=banana007, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60088
+shadowsocks=39.88.73.164:24605, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal39.88.73.164port24605
 shadowsocks=185.168.20.119:40086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal185.168.20.119port40086
+shadowsocks=101.32.46.127:50086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal101.32.46.127port50086
+shadowsocks=174.139.137.34:44605, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal174.139.137.34port44605
 shadowsocks=67.198.228.228:60086, method=none, password=banana007, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal67.198.228.228port60086
+shadowsocks=113.120.112.235:60086, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60086
+shadowsocks=113.120.112.235:60089, method=none, password=sealnet+305, ssr-protocol=auth_chain_a,fast-open=false, udp-relay=true,   tag=seal113.120.112.235port60089
