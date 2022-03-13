@@ -20,4 +20,4 @@ http=ap1-sg.er3.xyz:29986, username=464034509357056000, password= d8e56915-619a-
 http=ap1-ca.er3.xyz:29983, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速加拿大
 
 http=ap1-au.er3.xyz:29982, username=464034509357056000, password= d8e56915-619a-4778-90a3-9c1cf73cdbdd, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速澳大利亚
-
+trojan://coldwar2@jp.swiftfalcon.app:443
