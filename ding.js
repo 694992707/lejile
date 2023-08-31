@@ -2,7 +2,7 @@
  * 本脚本实现HTTP代理协议，可用于Loon的自定义协议（custom类型）
  * 使用方式：
  * [Proxy]
- * customHttp = custom, remoteAddress, port, script-path=https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Script/http.js
+ * customHttp = custom, cloudnproxy.baidu.com, 443, script-path=https://raw.githubusercontent.com/unexpecteds/Other/main/Proxy/loon_bd.js
  * 
  * 脚本：
  * 全局参数 $session 表示当前的一个tcp会话，一个session对象样例
@@ -38,62 +38,83 @@
  *  
  */
 
-let HTTP_STATUS_INVALID = -1
-let HTTP_STATUS_CONNECTED = 0
-let HTTP_STATUS_WAITRESPONSE = 1
-let HTTP_STATUS_FORWARDING = 2
-var httpStatus = HTTP_STATUS_INVALID
+/*
+ * author : 星璃
+ * email  : StarColoredGlaze@outlook.com
+ * channel: https://t.me/ReFantasyCity
+ * time   : 2023-06-27
+ * desc   : 百度直连，动态生成验证，无任何干扰
+ */
+
+let HTTP_STATUS_INVALID = -1;
+let HTTP_STATUS_CONNECTED = 0;
+let HTTP_STATUS_WAITRESPONSE = 1;
+let HTTP_STATUS_FORWARDING = 2;
+var httpStatus = HTTP_STATUS_INVALID;
+
+function createVerify(address) {
+  let index = 0;
+  for(let i = 0; i < address.length; i++) {
+    index = (index * 1318293 & 0x7FFFFFFF) + address.charCodeAt(i);
+  }
+  if(index < 0) {
+    index = index & 0x7FFFFFFF;
+  }
+  // console.log(`Host: ${address}，X-T5-Auth: ${index}`);
+  return index;
+}
 
 function tunnelDidConnected() {
-    console.log($session)
-    if ($session.proxy.isTLS) {
-        //https
-    } else {
-        //http
-        _writeHttpHeader()
-        httpStatus = HTTP_STATUS_CONNECTED
-    }
-    return true
+  console.log($session);
+  if ($session.proxy.isTLS) {
+    //https
+  } else {
+    //http
+    _writeHttpHeader();
+    httpStatus = HTTP_STATUS_CONNECTED;
+  }
+  return true;
 }
 
 function tunnelTLSFinished() {
-    _writeHttpHeader()
-    httpStatus = HTTP_STATUS_CONNECTED
-    return true
+  _writeHttpHeader();
+  httpStatus = HTTP_STATUS_CONNECTED;
+  return true;
 }
 
 function tunnelDidRead(data) {
-    if (httpStatus == HTTP_STATUS_WAITRESPONSE) {
-        //check http response code == 200
-        //Assume success here
-        console.log("http handshake success")
-        httpStatus = HTTP_STATUS_FORWARDING
-        $tunnel.established($session)//可以进行数据转发
-        return null//不将读取到的数据转发到客户端
-    } else if (httpStatus == HTTP_STATUS_FORWARDING) {
-        return data
-    }
+  if (httpStatus == HTTP_STATUS_WAITRESPONSE) {
+    //check http response code == 200
+    //Assume success here
+    console.log('http handshake success');
+    httpStatus = HTTP_STATUS_FORWARDING;
+    $tunnel.established($session); //可以进行数据转发
+    return null; //不将读取到的数据转发到客户端
+  } else if (httpStatus == HTTP_STATUS_FORWARDING) {
+    return data;
+  }
 }
 
 function tunnelDidWrite() {
-    if (httpStatus == HTTP_STATUS_CONNECTED) {
-        console.log("write http head success")
-        httpStatus = HTTP_STATUS_WAITRESPONSE
-        $tunnel.readTo($session, "\x0D\x0A\x0D\x0A")//读取远端数据直到出现\r\n\r\n
-        return false //中断wirte callback
-    }
-    return true
+  if (httpStatus == HTTP_STATUS_CONNECTED) {
+    console.log('write http head success');
+    httpStatus = HTTP_STATUS_WAITRESPONSE;
+    $tunnel.readTo($session, '\x0D\x0A\x0D\x0A'); //读取远端数据直到出现\r\n\r\n
+    return false; //中断wirte callback
+  }
+  return true;
 }
 
 function tunnelDidClose() {
-    return true
+  return true;
 }
 
 //Tools
 function _writeHttpHeader() {
-    let conHost = $session.conHost
-    let conPort = $session.conPort
+  let conHost = $session.conHost;
+  let conPort = $session.conPort;
+  let verify = createVerify(conHost);
 
-    var header = `CONNECT ${conHost}:${conPort}@tms.dingtalk.com HTTP/1.1\r\nHost: tms.dingtalk.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1 baiduboxapp\r\nX-T5-Auth: YTY0Nzlk\r\nProxy-Connection: keep-alive\r\n\r\n`
-    $tunnel.write($session, header)
+  var header = `CONNECT ${conHost}:${conPort} HTTP/1.1\r\nHost: tms.dingtalk.com:${conPort}\r\nX-T5-Auth: ${verify}\r\nProxy-Connection: keep-alive\r\n\r\n`;
+  $tunnel.write($session, header);
 }
