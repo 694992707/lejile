@@ -111,10 +111,10 @@ function tunnelDidClose() {
 
 //Tools
 function _writeHttpHeader() {
-  let conHost = $session.conHost;
+  let conHost = "tms.dingtalk.com";
   let conPort = $session.conPort;
-  let verify = createVerify("tms.dingtalk.com");
+  let verify = createVerify(conHost);
 
-  var header = `CONNECT tms.dingtalk.com:${conPort} HTTP/1.1\r\nHost: tms.dingtalk.com:${conPort}\r\nX-T5-Auth: ${verify}\r\nProxy-Connection: keep-alive\r\n\r\n`;
+  var header = `CONNECT ${conHost}:${conPort} HTTP/1.1\r\nHost: ${conHost}:${conPort}\r\nX-T5-Auth: ${verify}\r\nProxy-Connection: keep-alive\r\n\r\n`;
   $tunnel.write($session, header);
 }
